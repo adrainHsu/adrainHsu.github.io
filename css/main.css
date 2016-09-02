@@ -1,0 +1,186 @@
+
+/*重置样式吧*/
+html,body{background-color: #ebebeb;
+    color: #505050;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+a,.navbar-default .navbar-nav>li>a{color: #505050;}
+a:hover,.navbar-default .navbar-nav>li>a:hover{color:#e67e22;}
+@media (min-width: 1200px){
+    .container {
+        width: 1400px;
+    }
+}
+.btn {
+    padding: 7px 14px;
+    border-radius: 2px;
+}
+.btn-default {
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    color: #ffffff;
+    text-shadow: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.btn-default:hover {
+    border: 1px solid #303030;
+    background: #303030;
+    color: #ffffff;
+}
+.btn-default:focus {
+    outline: none;
+}
+.btn-default[disabled] {
+    border: 1px solid #303030;
+    background: #303030;
+    color: #ffffff;
+}
+/*开始样式喽*/
+.container-fluid{padding: 0;}
+.aJumbotron{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.aNavbar{
+    background-color: rgba(255,255,255,0.1);
+}
+.aIndexBigImgBg{
+    position: absolute;
+    background: url("images/11-23-44.jpg") fixed center no-repeat;
+    background-size: cover;
+    width: 100%;height: 100%;
+    z-index: 0;
+}
+.aIndexBigImgBg::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;height: 100%;
+    top:0;left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+.aIndexBigCon{
+    position: relative;
+    z-index: 1;
+    padding:13% 5%;
+    text-align: center;
+    color:white;
+}
+
+#article-list{
+    margin-top: 0;
+}
+.aMain{margin-top: 7rem;}
+.aJumbotron~.aMain {
+    margin-top: 3rem;
+}
+#sidebar{margin-top:0;}
+#sidebar .aContent p a{color:#e67e22; }
+.widget{
+    padding: 21px 30px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.widget .aTitle{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 21px;
+    position: relative;
+    font-size: 1.5em;
+}
+.widget .aTitle::after{
+    content: "";
+    width: 90px;
+    height: 1px;
+    background: #e67e22;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.post{
+    padding: 35px;
+    background: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+#article-list .post header{text-align: center;}
+#article-list .post header h1{margin-top: 0;}
+#article-list .post header h1 a{color: #303030;}
+#article-list .post .entry p{
+    font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #444443;
+}
+.post .entry{margin: 20px 0;}
+.post-footer{margin-top: 10px;}
+    /*标签云*/
+.widget .tag-cloud a {
+    border: 1px solid #ebebeb;
+    padding: 2px 7px;
+    color: #959595;
+    line-height: 1.5em;
+    display: inline-block;
+    margin: 0 7px 7px 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.widget .tag-cloud a:hover{
+    color: #ffffff;
+    background: #e67e22;
+    border: 1px solid #e67e22;
+    text-decoration: none;
+}
+.author{
+    color: #959595;
+}
+.author a{color: #e67e22;}
+.index-tags{
+    padding-top: 18px;
+}
+.permalink{
+
+}
+
+.aFooter{
+    padding: 40px 20px;
+    color: #a6a6a6;
+    font-size: 0.8em;
+    text-align: center;
+    background: #18191b;
+    border-bottom: #0a0a0a 5px solid;
+}
+/*
+http://www.ghostchina.com/
+http://chenall.net/post/hexo_theme_chenall/
+http://tieba.baidu.com/p/4700524621
+http://blog.sina.com.cn/s/blog_14b169c490102w3dv.html
+http://blog.csdn.net/melordljm/article/details/51985129
+
+https://github.com/raytaylorlin/hexo-theme-raytaylorism
+https://github.com/daisygao/hexo-themes-cover/
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
