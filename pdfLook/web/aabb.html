@@ -108,15 +108,15 @@
 					}
 				});
 				document.getElementById('postMessage').addEventListener('click', function() {
-					console.log("bbaa666")
-					uni.postMessage({
+					console.log("bbaa6667")
+					uni.redirectTo({
+					  url: '/pages/brandApply/brandApply'
+					});
+					/* uni.postMessage({
 						data: {
 							action: 'message'
 						}
-					});
-					uni.navigateBack({
-						delta: 1
-					});
+					}); */
 				});
 			});
 		</script>

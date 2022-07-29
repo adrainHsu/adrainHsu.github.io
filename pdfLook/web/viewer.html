@@ -444,7 +444,8 @@ See https://github.com/adobe-type-tools/cmap-resources
 				}  
 			});  
 			document.querySelector("#postMessage").addEventListener('click', function() {
-			  	uni.postMessage({
+			  	
+				uni.postMessage({
 			  		data: {
 			  			action: 'message'
 			  		}
