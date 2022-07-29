@@ -1123,9 +1123,10 @@ select {
 #viewerContainer {
   overflow: auto;
   position: absolute;
-  top: 32px;
+  /* top: 32px; */
+  top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 84px;
   left: 0;
   outline: none;
 }

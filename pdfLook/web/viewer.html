@@ -28,13 +28,29 @@ See https://github.com/adobe-type-tools/cmap-resources
     <title>PDF.js viewer</title>
 
     <link rel="stylesheet" href="viewer.css">
-
+	
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.properties">
 <script src="../build/pdf.js"></script>
 
   <script src="viewer.js"></script>
-
+	<style>
+		.button-bottom{
+			position: fixed;
+			bottom:20px;
+			left:37px;
+			right:37px;
+			background-color: #4386ED;
+			color: #fff;
+			height: 44px;
+			border-radius: 22px;
+			font-size: 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 5px #4386ED;
+		}
+	</style>
   </head>
 
   <body tabindex="1">
@@ -410,9 +426,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
-
+	
     <input type="file" id="fileInput" class="hidden">
 	
+	<div class="button-bottom">立即申请</div>
 	<!-- 微信 JS-SDK 如果不需要兼容小程序，则无需引用此 JS 文件。 -->  
 	<script type="text/javascript" src="./uniComponents/jweixin-1.4.0.js"></script>
 	<!-- uni 的 SDK，必须引用。 -->  
