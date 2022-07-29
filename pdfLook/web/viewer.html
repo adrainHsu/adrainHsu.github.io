@@ -429,7 +429,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 	
     <input type="file" id="fileInput" class="hidden">
 	
-	<div class="button-bottom">立即申请</div>
+	<div id="postMessage" class="button-bottom">立即申请</div>
 	<!-- 微信 JS-SDK 如果不需要兼容小程序，则无需引用此 JS 文件。 -->  
 	<script type="text/javascript" src="./uniComponents/jweixin-1.4.0.js"></script>
 	<!-- uni 的 SDK，必须引用。 -->  
@@ -442,7 +442,14 @@ See https://github.com/adobe-type-tools/cmap-resources
 				data: {  
 					action: 'adrainHsuPostMessage'  
 				}  
-			});    
+			});  
+			document.querySelector("#postMessage").addEventListener('click', function() {
+			  	uni.postMessage({
+			  		data: {
+			  			action: 'message'
+			  		}
+			  	});
+			})
 		})
 	</script>
   </body>
