@@ -205,8 +205,8 @@ See https://github.com/adobe-type-tools/cmap-resources
             </button>
           </div>
         </div>  <!-- secondaryToolbar -->
-
-        <div class="toolbar">
+		<!-- 顶部工具栏隐藏 -->
+        <div class="toolbar" style="display: none;">
           <div id="toolbarContainer">
             <div id="toolbarViewer">
               <div id="toolbarViewerLeft">
@@ -412,5 +412,8 @@ See https://github.com/adobe-type-tools/cmap-resources
     <div id="printContainer"></div>
 
     <input type="file" id="fileInput" class="hidden">
+	
+	<script type="text/javascript" src="./uniComponents/jweixin-1.4.0.js"></script>
+	<script type="text/javascript" src="./uniComponents/uni.webview.1.5.4.js"></script>
   </body>
 </html>
